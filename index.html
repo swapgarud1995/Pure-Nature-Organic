@@ -1,0 +1,802 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Pure Nature organic</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class='bi bi-cart'></i> Pure Nature organic
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Featured</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#About Us" class="nav__link">About Us</a>
+
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/3.jpeg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Dehydrated moringa leaves powder</h3>
+                        <span class="cart__price">250 Rs</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/4.jpeg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Dehydrated beetroot Powder</h3>
+                        <span class="cart__price">850 Rs</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/3.jpeg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Dehydrated Spinach Powder</h3>
+                        <span class="cart__price">980 Rs</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">2080 RS</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/2.jpeg" alt="" class="home__img">
+                    </div>
+    
+                    <!-- <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div> -->
+    
+                    <div class="home__data">
+                        <h1 class="home__title">NEW Products Collection</h1>
+                        <p class="home__description">
+                            🌿 Introducing our latest arrivals - a fresh selection of premium organic products that are sure to delight your senses.
+                        </p>
+                        <!-- <span class="home__price">250 RS </span> -->
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Discover
+                            </a>
+
+                            <button class="button home__button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Featured
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="assets/img/5.jpeg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Dehydrated moringa leaves powder</h3>
+                            <span class="featured__price">230 RS</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="assets/img/4.jpeg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Dehydrated beetroot Powder</h3>
+                            <span class="featured__price">250 RS</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="assets/img/3.jpeg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Dehydrated Spinach Powder</h3>
+                            <span class="featured__price">890 RS</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== About Us ====================-->
+            <section class="story section container" id=" About Us">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            About US
+                        </h2>
+    
+                        
+    
+                        <p class="story__description">
+                            we are passionate about providing you with the finest organic products that nurture your well-being while caring for our planet. Our journey began with a simple but powerful idea: to make organic, sustainable, and healthy living accessible to all.<br> Founded in 2023 our story is deeply rooted in our love for nature and a commitment to ethical practices. Our founder  was inspired to create a brand that promotes health, sustainability, and conscious living.
+                        </p>
+    
+                        
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/1.jpeg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Products
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/6.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Termeric Powder</h3>
+                        <span class="products__price">500 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/7.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Cow Manuare</h3>
+                        <span class="products__price">1350 Rs</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/8.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Neem Oil</h3>
+                        <span class="products__price">870 Rs</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/9.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Organic Vegi mix</h3>
+                        <span class="products__price">550 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/10.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Nutri-Rich - Seaweed Fortified Vermicompost
+                        </h3>
+                        <span class="products__price">950 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/11.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Olive Oil
+                        </h3>
+                        <span class="products__price">789 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/12.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">mustard oil
+                        </h3>
+                        <span class="products__price">760 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/13.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">jaggery
+                        </h3>
+                        <span class="products__price">450 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/14.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">jagery powder
+                        </h3>
+                        <span class="products__price">650 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/15.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">turmeric powder
+                        </h3>
+                        <span class="products__price">450 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/16.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Coconut oil
+                        </h3>
+                        <span class="products__price">350 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/17.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Brown rice
+                        </h3>
+                        <span class="products__price">500 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                    <article class="products__card">
+                        <img src="assets/img/18.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Ghee
+                        </h3>
+                        <span class="products__price">900 RS</span>
+
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+              
+
+                    <article class="products__card">
+                         <img src="assets/img/19.jpeg" alt="" class="products__img">
+
+                        <h3 class="products__title">Wheat flour
+                        </h3>
+                         <span class="products__price">456 RS</span>
+
+                        <button class="products__button">
+                    <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+               
+
+                    <article class="products__card">
+                    <img src="assets/img/20.jpeg" alt="" class="products__img">
+
+                    <h3 class="products__title">Brown sugar
+                    </h3>
+                    <span class="products__price">324 RS</span>
+
+                     <button class="products__button">
+                     <i class='bx bx-shopping-bag'></i>
+                    </button>
+                    </article>
+             
+
+
+<article class="products__card">
+    <img src="assets/img/21.jpeg" alt="" class="products__img">
+
+    <h3 class="products__title">Red chilli powder
+    </h3>
+    <span class="products__price">346 RS</span>
+
+    <button class="products__button">
+        <i class='bx bx-shopping-bag'></i>
+    </button>
+</article>
+
+
+<article class="products__card">
+    <img src="assets/img/22.jpeg" alt="" class="products__img">
+
+    <h3 class="products__title">Flax seed
+    </h3>
+    <span class="products__price">562 RS</span>
+
+    <button class="products__button">
+        <i class='bx bx-shopping-bag'></i>
+    </button>
+</article>
+
+
+<article class="products__card">
+    <img src="assets/img/23.jpeg" alt="" class="products__img">
+
+    <h3 class="products__title">Chia seed
+    </h3>
+    <span class="products__price">670 RS</span>
+
+    <button class="products__button">
+        <i class='bx bx-shopping-bag'></i>
+    </button>
+</article>
+
+
+
+<article class="products__card">
+    <img src="assets/img/23.jpeg" alt="" class="products__img">
+
+    <h3 class="products__title">Jawar Aata
+    </h3>
+    <span class="products__price">189 RS</span>
+
+    <button class="products__button">
+        <i class='bx bx-shopping-bag'></i>
+    </button>
+</article>
+</div>
+</section>
+
+
+
+  
+          
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Experience the purity of nature with our organic products. Good for you, good for the planet.From our farm to your table, our organic products are a testament to freshness and sustainability.Our commitment to organic farming ensures that you get the best quality products for a healthier you.
+                                    Taste the difference with our organic line-up. Every product is a step towards a greener, healthier future.
+                                    We believe in transparency and quality. That's why our organic products are always sourced with care.
+                                </p>
+                                
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Malti Patil</span>
+                                        <span class="testimonial__perfil-detail">Director of a company</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Experience the purity of nature with our organic products. Good for you, good for the planet.From our farm to your table, our organic products are a testament to freshness and sustainability.Our commitment to organic farming ensures that you get the best quality products for a healthier you.
+                                    Taste the difference with our organic line-up. Every product is a step towards a greener, healthier future.
+                                    We believe in transparency and quality. That's why our organic products are always sourced with care.
+                                </p>
+                                
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Samantha Mey</span>
+                                        <span class="testimonial__perfil-detail">Director of a company</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                               
+        
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Tantalize Your Tastebuds with Our Gourmet Food Products.Crafted with Care, Served with Love – Choose Our Food Products.
+                                </p>
+             
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Raul Zaman</span>
+                                        <span class="testimonial__perfil-detail">Director of a company</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="assets/img/2.jpeg" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <!-- <section class="new section container" id="new">
+                <h2 class="section__title">
+                    New Arrivals
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new1.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Longines rose</h3>
+                                    <span class="new__price">$980</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new2.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Jazzmaster</h3>
+                                    <span class="new__price">$1150</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new3.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Dreyfuss gold</h3>
+                                    <span class="new__price">$750</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new4.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Portuguese rose</h3>
+                                    <span class="new__price">$1590</span>
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="newsletter__description">
+                            Don't miss out on your discounts. Subscribe to our email 
+                            newsletter to get the best offers, discounts, coupons, 
+                            gifts and much more.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+            <!-----------------certification ----------------------------->
+            <section class="cerificate section container"id="products">
+            <div class="row justify-content-center nxt-why">
+            
+                    
+                <!-- <div class="col-12 text-center"> -->
+                  <!-- <h2 class="hp-header">CERTIFIED BY</h2> -->
+                  <h2 class="section__title">
+                    CERTIFIED BY
+                </h2>
+                </div>
+                
+                <div class="row certs">
+                  	<div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-4ff64053 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_india_organic.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_india_organic.png?v=1653903985">
+                        <img class="hs-lazyload hs-id-ab302fa6 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_ecocert.png?v=1653903984" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_ecocert.png?v=1653903984">
+                        <img class="hs-lazyload hs-id-ea39d897 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_haccp.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_haccp.png?v=1653903985">
+                        <img class="hs-lazyload hs-id-dc792035 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_noca.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_noca.png?v=1653903985">
+                        <img class="hs-lazyload hs-id-98dd5470 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_jaivik_bharat.png?v=1653903984" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_jaivik_bharat.png?v=1653903984">
+                  	</div>
+                  	<!-- <div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-ab302fa6 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_ecocert.png?v=1653903984" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_ecocert.png?v=1653903984">
+                  	</div>
+                  	<div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-98dd5470 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_jaivik_bharat.png?v=1653903984" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_jaivik_bharat.png?v=1653903984">
+                  	</div>
+                  	<div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-80640e97 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_usda.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_usda.png?v=1653903985">
+                  	</div>
+                  	<div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-ea39d897 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_haccp.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_haccp.png?v=1653903985">
+                  	</div>
+                  	<div class="col-3 col-md-1">
+                  		<img class="hs-lazyload hs-id-dc792035 ls-is-cached lazyloaded" data-src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_noca.png?v=1653903985" src="https://cdn.shopify.com/s/files/1/0489/5028/0356/files/logo_noca.png?v=1653903985">
+                  	</div> -->
+                </div>
+              </div>
+            </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list">
+                        <li>Company Name : Pure  Nature organic</li>
+                        <li>Founded in 2023</li>
+                    
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Organic Moringa Powder </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Regular Multi Pack Of 18</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Regular Multi Pack Of 18</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Saffron Thread kesar</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
